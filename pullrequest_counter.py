@@ -4,7 +4,7 @@ url = ('https://api.github.com/repos/kubernetes/kubernetes/pulls')
 
 json_response = requests.get(url)
 
-if json_response.status_codes == 200:
+if json_response.status_code == 200:
     pull_request = json_response.json()
 
     pull_counter = {}
