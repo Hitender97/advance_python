@@ -18,7 +18,7 @@ operation = sys.argv[2]
 b=float(sys.argv[3])
 
 if not (is_positive(a) and is_positive(b)):
-    print("Both numbers must be positive.")
+    print("Both numbers MUST be positive.")
     sys.exit(1)
 
 if operation == "add":
